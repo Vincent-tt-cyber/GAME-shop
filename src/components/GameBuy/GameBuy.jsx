@@ -10,7 +10,7 @@ const GameBuy = ({ game }) => {
 
   const handleClick = (e) => {
     e.stopPropagation();
-    if (isItemInCart) {
+    if (isItemInCart) { 
       // console.log(isItemInCart);
       dispatch(removeItem(game.id));
     } else {
